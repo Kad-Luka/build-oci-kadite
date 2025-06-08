@@ -38,6 +38,15 @@ modules:
       - edk2-ovmf
       - virt-manager
       - virt-viewer
+      # Build stuff
+      - just
+      - cargo
+      - rust-analyzer
+      - npm
+      - pipx
+      - libxkbcommon-devel
+      - openssl-devel
+      - maven
 
   - type: default-flatpaks
     notify: true
