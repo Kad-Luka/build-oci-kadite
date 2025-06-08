@@ -2,7 +2,7 @@
 name: cosmic-asus-nvidia
 description: cosmic-atomic-main with Asus and Nvidia support.
     
-base-image: ghcr.io/ublue-os/cosmic-atomic-main
+base-image: ghcr.io/ublue-os/cosmic-atomic-nvidia
 image-version: latest
 
 modules:
