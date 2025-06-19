@@ -16,9 +16,9 @@ modules:
       - https://copr.fedorainfracloud.org/coprs/atim/starship/repo/fedora-%OS_VERSION%/atim-starship-fedora-%OS_VERSION%.repo
       - https://copr.fedorainfracloud.org/coprs/lukenukem/asus-linux/repo/fedora-%OS_VERSION%/lukenukem-asus-linux-fedora-%OS_VERSION%.repo
       - https://copr.fedorainfracloud.org/coprs/wezfurlong/wezterm-nightly/repo/fedora-%OS_VERSION%/wezfurlong-wezterm-nightly-fedora-%OS_VERSION%.repo
-      - https://copr.fedorainfracloud.org/coprs/zawertun/nerd-fonts/repo/fedora-%OS_VERSION%/zawertun-nerd-fonts-fedora-%OS_VERSION%.repo
+      #- https://copr.fedorainfracloud.org/coprs/zawertun/nerd-fonts/repo/fedora-%OS_VERSION%/zawertun-nerd-fonts-fedora-%OS_VERSION%.repo
       # Alternative yazi repository that supports Fedora 42
-      #- https://copr.fedorainfracloud.org/coprs/errornointernet/packages/repo/fedora-%OS_VERSION%/errornointernet-packages-fedora-%OS_VERSION%.repo
+      - https://copr.fedorainfracloud.org/coprs/errornointernet/packages/repo/fedora-%OS_VERSION%/errornointernet-packages-fedora-%OS_VERSION%.repo
     install:
  
       - asusctl
@@ -29,8 +29,8 @@ modules:
       
       - wezterm # Terminal alternative
       - alacritty # Terminal
-      #- yazi # File Manager (from errornointernet/packages repo)
-      - nerd-fonts-hack
+      - yazi # File Manager (from errornointernet/packages repo)
+      #- nerd-fonts-hack
       - nu # Shell (Interactive)
 
       - starship # Shell Prompt
