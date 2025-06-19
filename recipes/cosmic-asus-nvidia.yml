@@ -24,6 +24,7 @@ modules:
       - asusctl
       - supergfxctl
       - asusctl-rog-gui
+      - gamescope
       
       - nvtop # Nvidia Util
       
