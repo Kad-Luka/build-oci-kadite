@@ -17,6 +17,7 @@ modules:
       - https://copr.fedorainfracloud.org/coprs/lukenukem/asus-linux/repo/fedora-%OS_VERSION%/lukenukem-asus-linux-fedora-%OS_VERSION%.repo
       - https://copr.fedorainfracloud.org/coprs/wezfurlong/wezterm-nightly/repo/fedora-%OS_VERSION%/wezfurlong-wezterm-nightly-fedora-%OS_VERSION%.repo
       - https://copr.fedorainfracloud.org/coprs/zawertun/nerd-fonts/repo/fedora-%OS_VERSION%/zawertun-nerd-fonts-fedora-%OS_VERSION%.repo
+      - https://copr.fedorainfracloud.org/coprs/lihaohong/yazi/repo/fedora-%OS_VERSION%/lihaohong-yazi-fedora-%OS_VERSION%.repo
     install:
  
       - asusctl
@@ -25,7 +26,9 @@ modules:
       
       - nvtop # Nvidia Util
       
-      - wezterm # Terminal emultor
+      - wezterm # Terminal alternative
+      - alacritty # Terminal
+      - yazi # File Manager
       - nerd-fonts-hack
       - nu # Shell (Interactive)
 
