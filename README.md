@@ -1,4 +1,4 @@
-# Build OCI &nbsp; [![bluebuild build badge](https://github.com/zaravi/zavite/actions/workflows/build.yml/badge.svg)](https://github.com/zaravi/zavite/actions/workflows/build.yml)
+# Build OCI &nbsp; [![bluebuild build badge](https://github.com/Kad-Luka/build-oci-kadite/actions/workflows/build.yml/badge.svg)](https://github.com/Kad-Luka/build-oci-kadite/actions/workflows/build.yml)
 
 ## Images
 
