@@ -2,7 +2,7 @@
 name: aurora-dx-asus-nvidia
 description: aurora-dx with Asus and Nvidia support.
     
-base-image: ghcr.io/ublue-os/aurora-dx-nvidia-open
+base-image: ghcr.io/ublue-os/aurora-dx-nvidia
 image-version: latest
 
 modules:
