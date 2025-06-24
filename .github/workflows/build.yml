@@ -24,9 +24,10 @@ jobs:
       fail-fast: false
       matrix:
         recipe:
-          - cosmic.yml
-          - bazzite-deck.yml
+          #- cosmic.yml
+          #- bazzite-deck.yml
           - cosmic-asus-nvidia.yml
+          - aurora-dx-asus-nvidia.yml
     steps:
       - name: Build Custom Image
         uses: blue-build/github-action@v1.8
