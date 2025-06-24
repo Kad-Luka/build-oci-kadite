@@ -1,0 +1,67 @@
+--- 
+name: aurora-dx-asus-nvidia
+description: aurora-dx with Asus and Nvidia support.
+    
+base-image: ghcr.io/ublue-os/aurora-dx-nvidia
+image-version: latest
+
+modules:
+  - type: files
+    files:
+      - source: system
+        destination: /
+
+  - type: rpm-ostree
+    repos:
+      - https://copr.fedorainfracloud.org/coprs/atim/starship/repo/fedora-%OS_VERSION%/atim-starship-fedora-%OS_VERSION%.repo
+      - https://copr.fedorainfracloud.org/coprs/lukenukem/asus-linux/repo/fedora-%OS_VERSION%/lukenukem-asus-linux-fedora-%OS_VERSION%.repo
+      - https://copr.fedorainfracloud.org/coprs/wezfurlong/wezterm-nightly/repo/fedora-%OS_VERSION%/wezfurlong-wezterm-nightly-fedora-%OS_VERSION%.repo
+      - https://copr.fedorainfracloud.org/coprs/lihaohong/yazi/repo/fedora-%OS_VERSION%/lihaohong-yazi-fedora-%OS_VERSION%.repo
+      - https://copr.fedorainfracloud.org/coprs/yalter/niri-git/repo/fedora-%OS_VERSION%/yalter-niri-git-fedora-%OS_VERSION%.repo
+    install:
+ 
+      - asusctl
+      - supergfxctl
+      - asusctl-rog-gui
+      - niri
+      - gamescope
+      
+      - nvtop # Nvidia Util
+      
+      - wezterm # Terminal alternative
+      - alacritty # Terminal
+      - yazi # File Manager (from errornointernet/packages repo)
+      
+      - nu # Shell (Interactive)
+
+      # starship # Shell Prompt - already included in Aurora DX
+      - atuin # Shell History
+      - zoxide # Magic cd
+
+      - helix # Editor
+
+      - btop # System Monitor
+
+      # Virtualization
+      - qemu
+      - edk2-ovmf
+      - virt-manager
+      - virt-viewer
+      # Build stuff
+      - just
+      - cargo
+      - rust-analyzer
+      - npm
+      - pipx
+      - libxkbcommon-devel
+      - openssl-devel
+      - maven
+
+  - type: default-flatpaks
+    notify: true
+    system:
+      repo-url: https://dl.flathub.org/repo/flathub.flatpakrepo
+      repo-name: flathub
+      repo-title: "Flathub (system-wide)"
+
+  - type: signing
