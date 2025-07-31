@@ -57,8 +57,8 @@ modules:
       - openssl-devel
       - maven
       
-    - type: default-flatpaks
-      configurations:
+      - type: default-flatpaks
+        configurations:
         - scope: user
           repo:
             # you can override the title to make inclusion of both system and user repos clearer
@@ -70,4 +70,4 @@ modules:
           install: # system flatpaks we want all users to have and not remove
             - com.github.tchx84.Flatseal
 
-- type: signing
+  - type: signing
