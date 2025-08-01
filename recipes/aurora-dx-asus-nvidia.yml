@@ -57,9 +57,9 @@ modules:
       - openssl-devel
       - maven
       
-type: default-flatpaks
-configurations:
-  - install:
+  - type: default-flatpaks
+    configurations:
+    - install:
       - app.zen_browser.zen
               
   - type: signing
