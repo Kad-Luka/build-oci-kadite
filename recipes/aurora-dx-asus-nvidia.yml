@@ -57,13 +57,9 @@ modules:
       - openssl-devel
       - maven
       
-  - type: default-flatpaks
-    notify: true
-    system:
-      repo-url: https://dl.flathub.org/repo/flathub.flatpakrepo
-      repo-name: flathub
-      repo-title: "Flathub (system-wide)"
-      install:
-        - app.zen_browser.zen
-        
+type: default-flatpaks
+configurations:
+  - install:
+      - app.zen_browser.zen
+              
   - type: signing
